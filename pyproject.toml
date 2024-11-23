@@ -1,0 +1,18 @@
+[project]
+name = "djangify-package"
+version = "0.1.0"
+description = "Transform any Python package into a Django Project and Application"
+readme = "README.md"
+dependencies = [
+    "django>=5.1.3",
+]
+
+[tool.ruff.lint]
+extend-select = [
+    "I", "N", "D", "UP", "B", "A", "Q",
+    "DJ",
+]
+extend-ignore = [
+    "D1",
+    "DJ001", "DJ008",
+]
